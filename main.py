@@ -16,7 +16,7 @@ class MainWindow(QMainWindow):
         diameter = randint(1, min([self.width(), self.height()]))
         x = randint(0, self.width() - diameter - 1)
         y = randint(0, self.height() - diameter - 1)
-        color = [randint(0, 255) for i in range(3)]
+        color = [255, 255, 0]
         self.circles += [(color, (x, y, diameter, diameter))]
         self.update()
 
